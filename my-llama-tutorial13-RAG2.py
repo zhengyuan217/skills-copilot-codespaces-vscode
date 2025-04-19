@@ -93,8 +93,8 @@ async def ingestRAG(data_dir: str, index_dir: str) -> VectorStoreIndex:
             return None
 
 async def main():
-    index = await ingestRAG(data_dir="/home/zhengyuan/AI/shuihuzhuan/data", 
-                       index_dir="/home/zhengyuan/AI/shuihuzhuan/storage")
+    index = await ingestRAG(data_dir="~/data", 
+                       index_dir="~/storage")
 
     if index==None:
         print("quit")
